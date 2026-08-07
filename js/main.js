@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Centro Educacional Zeone Garcia — Interações
+   Centro Educacional Zeone Garcia - Interações
    ========================================================================== */
 
 (function () {

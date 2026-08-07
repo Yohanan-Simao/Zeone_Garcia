@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Centro Educacional Zeone Garcia — Landing page
+   Centro Educacional Zeone Garcia - Landing page
    Paleta: verde (marca) + tons alegres de apoio
    ========================================================================== */
 
@@ -427,25 +427,6 @@ h1 {
   margin-bottom: 2.2rem;
 }
 
-.hero__points {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.4rem;
-  font-weight: 700;
-  font-size: 1rem;
-  color: var(--ink);
-}
-
-.hero__points li {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-}
-
-.hero__points span {
-  font-size: 1.15rem;
-}
-
 .hero__art {
   display: flex;
   justify-content: center;
@@ -816,6 +797,32 @@ h1 {
 }
 
 /* ==========================================================================
+   Projetos (mascote à direita)
+   ========================================================================== */
+
+.discover {
+  position: relative;
+}
+
+.discover__mascote {
+  position: absolute;
+  right: -750px;
+  top: 0;
+  bottom: 0;
+  width: auto;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+.discover__mascote img {
+  height: 72%;
+  width: auto;
+  max-width: none;
+  display: block;
+}
+
+/* ==========================================================================
    Momentos
    ========================================================================== */
 
@@ -1157,6 +1164,14 @@ h1 {
    Responsivo
    ========================================================================== */
 
+/* Mascotes laterais: só aparecem quando há margem de sobra na tela */
+@media (max-width: 1399px) {
+  .why__mascote,
+  .discover__mascote {
+    display: none;
+  }
+}
+
 @media (max-width: 960px) {
   .hero__inner {
     grid-template-columns: 1fr;
@@ -1169,10 +1184,6 @@ h1 {
 
   .cards {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .why__mascote {
-    display: none;
   }
 
   .stages {
@@ -1235,10 +1246,6 @@ h1 {
     grid-template-columns: 1fr;
   }
 
-  .why__mascote {
-    display: none;
-  }
-
   .location__map,
   .location__map iframe {
     min-height: 300px;
@@ -1266,10 +1273,6 @@ h1 {
 @media (max-width: 520px) {
   .cta__box {
     padding: 2.6rem 1.6rem;
-  }
-
-  .hero__points {
-    gap: 1rem;
   }
 }
 
