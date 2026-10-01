@@ -5,6 +5,13 @@
 (function () {
   "use strict";
 
+  /* ---- URL do portal (TROCAR pela URL oficial quando o portal entrar no ar) ---- */
+  var PORTAL_URL = "https://portal-zeone.vercel.app";
+
+  document.querySelectorAll("a[data-portal]").forEach(function (a) {
+    a.href = PORTAL_URL;
+  });
+
   /* ---- Header: sombra ao rolar ---- */
   var header = document.querySelector(".header");
 
@@ -43,6 +50,13 @@
     });
   }
 
+  /* ---- Fechar menu com ESC ---- */
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      closeMenu();
+    }
+  });
+
   /* ---- Fechar menu ao redimensionar para desktop ---- */
   window.addEventListener("resize", function () {
     if (window.innerWidth > 768) {
@@ -67,6 +81,12 @@
       event.preventDefault();
       window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     });
+  }
+
+  /* ---- Ano dinâmico no rodapé ---- */
+  var ano = document.getElementById("ano");
+  if (ano) {
+    ano.textContent = String(new Date().getFullYear());
   }
 
   /* ---- Reveal on scroll ---- */

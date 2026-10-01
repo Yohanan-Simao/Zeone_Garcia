@@ -11,8 +11,30 @@
   <meta property="og:description" content="Educação infantil com amor e excelência, do Berçário ao Pré-Escolar em Palhoça/SC. Aprendizagem, cuidado e desenvolvimento com olhar individual para cada criança." />
   <meta property="og:image" content="img/hero-criancas.png" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0A84D1" />
   <link rel="icon" type="image/png" href="img/favicon.png" />
   <link rel="apple-touch-icon" href="img/favicon.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Preschool",
+    "name": "Centro Educacional Professora Zeone Garcia",
+    "alternateName": "CED Zeone Garcia",
+    "description": "Educação infantil com amor e excelência, do Berçário ao Pré-Escolar em Palhoça/SC.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Cláudio Zacchi, 499 - Passa Vinte",
+      "addressLocality": "Palhoça",
+      "addressRegion": "SC",
+      "postalCode": "88132-060",
+      "addressCountry": "BR"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": -27.6403083, "longitude": -48.6724612 },
+    "hasMap": "https://maps.app.goo.gl/1zU9PDf2MDbG3Zuh6",
+    "telephone": "+55-48-99834-0569",
+    "sameAs": ["https://www.instagram.com/cedzeonegarcia"]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
@@ -43,10 +65,15 @@
           <li><a href="#localizacao">Localização</a></li>
           <li><a href="#depoimentos">Depoimentos</a></li>
           <li><a href="#contato">Contato</a></li>
+          <li><a data-portal href="https://portal-zeone.vercel.app" target="_blank" rel="noopener">Portal</a></li>
         </ul>
         <a class="btn btn--primary nav__cta" href="#contato">Fale conosco</a>
       </nav>
 
+      <a class="btn btn--primary header__portal" data-portal href="https://portal-zeone.vercel.app" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="4.5" y="10" width="15" height="10" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+        Portal
+      </a>
       <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
         <span></span><span></span><span></span>
       </button>
@@ -70,13 +97,18 @@
             </a>
             <a class="btn btn--ghost btn--lg" href="#porque">Conhecer a escola</a>
           </div>
+          <p class="hero__portal">Já é família Zeone? <a data-portal href="https://portal-zeone.vercel.app" target="_blank" rel="noopener">Acesse o portal</a></p>
         </div>
 
         <div class="hero__art">
           <div class="hero__photo">
             <img
-              src="img/hero-criancas.png"
+              src="img/hero-criancas.webp"
               alt="Crianças brincando no Centro Educacional Zeone Garcia"
+              width="1536"
+              height="1024"
+              fetchpriority="high"
+              decoding="async"
             />
           </div>
         </div>
@@ -94,13 +126,13 @@
         <span class="dot" aria-hidden="true">✦</span>
         <span>Nenhuma criança passa despercebida</span>
         <span class="dot" aria-hidden="true">✦</span>
-        <span>Educação com amor e excelência</span>
+        <span aria-hidden="true">Educação com amor e excelência</span>
         <span class="dot" aria-hidden="true">✦</span>
-        <span>Do Berçário ao Pré-Escolar</span>
+        <span aria-hidden="true">Do Berçário ao Pré-Escolar</span>
         <span class="dot" aria-hidden="true">✦</span>
-        <span>Aprendizagem, cuidado e desenvolvimento</span>
+        <span aria-hidden="true">Aprendizagem, cuidado e desenvolvimento</span>
         <span class="dot" aria-hidden="true">✦</span>
-        <span>Nenhuma criança passa despercebida</span>
+        <span aria-hidden="true">Nenhuma criança passa despercebida</span>
         <span class="dot" aria-hidden="true">✦</span>
       </div>
     </section>
@@ -116,7 +148,7 @@
 
         <div class="why">
           <div class="why__mascote" aria-hidden="true">
-            <img src="img/mascote-ap-direita.png" alt="" loading="lazy" />
+            <img src="img/mascote-ap-direita.webp" alt="" loading="lazy" decoding="async" width="1024" height="1024" />
           </div>
 
           <div class="cards">
@@ -223,7 +255,7 @@
           <article class="stage reveal">
             <span class="stage__tag">4 meses a 1 ano e 6 meses</span>
             <div class="stage__photo">
-              <img src="img/turma-bercario.png" alt="Bebê sendo acolhido por educadora no Berçário" loading="lazy" />
+              <img src="img/turma-bercario.webp" alt="Bebê sendo acolhido por educadora no Berçário" loading="lazy" decoding="async" width="1408" height="768" />
             </div>
             <h3>Berçário</h3>
             <p>Cuidado delicado, acolhimento e os primeiros estímulos sensoriais para os bebês.</p>
@@ -232,7 +264,7 @@
           <article class="stage reveal">
             <span class="stage__tag">1 ano e 6 meses a 3 anos</span>
             <div class="stage__photo">
-              <img src="img/turma-maternal.png" alt="Crianças explorando materiais sensoriais no Maternal" loading="lazy" />
+              <img src="img/turma-maternal.webp" alt="Crianças explorando materiais sensoriais no Maternal" loading="lazy" decoding="async" width="1408" height="768" />
             </div>
             <h3>Maternal</h3>
             <p>Exploração do mundo, autonomia e as primeiras descobertas com muita brincadeira.</p>
@@ -241,7 +273,7 @@
           <article class="stage reveal">
             <span class="stage__tag">4 a 5 anos</span>
             <div class="stage__photo">
-              <img src="img/turma-pre.png" alt="Crianças lendo um livro ilustrado com a professora no Pré-Escolar" loading="lazy" />
+              <img src="img/turma-pre.webp" alt="Crianças lendo um livro ilustrado com a professora no Pré-Escolar" loading="lazy" decoding="async" width="1408" height="768" />
             </div>
             <h3>Pré-Escolar</h3>
             <p>Alfabetização, preparação para o Ensino Fundamental e o grande momento da formatura.</p>
@@ -260,17 +292,17 @@
 
         <div class="discover">
           <div class="discover__mascote discover__mascote--left" aria-hidden="true">
-            <img src="img/mascote-festaE.png" alt="" loading="lazy" />
+            <img src="img/mascote-festaE.webp" alt="" loading="lazy" decoding="async" width="1024" height="1024" />
           </div>
 
           <div class="discover__mascote discover__mascote--right" aria-hidden="true">
-            <img src="img/mascote-festaD.png" alt="" loading="lazy" />
+            <img src="img/mascote-festaD.webp" alt="" loading="lazy" decoding="async" width="1024" height="1024" />
           </div>
 
           <div class="projects">
           <article class="project project--book reveal">
             <div class="project__visual" aria-hidden="true">
-              <img src="img/projeto-leitura.png" alt="Criança mostrando um livrinho ilustrado que ela mesma desenhou" loading="lazy" />
+              <img src="img/projeto-leitura.webp" alt="Criança mostrando um livrinho ilustrado que ela mesma desenhou" loading="lazy" decoding="async" width="1408" height="768" />
             </div>
             <h3>Projeto Estante Mágica</h3>
             <p>Cada criança escreve e ilustra o seu próprio livro, virando autora da própria história. Um convite ao mundo da leitura e da imaginação.</p>
@@ -278,7 +310,7 @@
 
           <article class="project project--cook reveal">
             <div class="project__visual" aria-hidden="true">
-              <img src="img/projeto-culinaria.png" alt="Crianças pequenas preparando uma receita saudável de frutas" loading="lazy" />
+              <img src="img/projeto-culinaria.webp" alt="Crianças pequenas preparando uma receita saudável de frutas" loading="lazy" decoding="async" width="1408" height="768" />
             </div>
             <h3>Culinária saudável</h3>
             <p>As crianças participam de receitas nutritivas, como o nosso milkshake de cacau, e aprendem na prática sobre alimentação.</p>
@@ -286,7 +318,7 @@
 
           <article class="project project--letters reveal">
             <div class="project__visual" aria-hidden="true">
-              <img src="img/projeto-alfabetizacao.png" alt="Crianças brincando com letras e sílabas na alfabetização lúdica" loading="lazy" />
+              <img src="img/projeto-alfabetizacao.webp" alt="Crianças brincando com letras e sílabas na alfabetização lúdica" loading="lazy" decoding="async" width="1536" height="1024" />
             </div>
             <h3>Alfabetização lúdica</h3>
             <p>"Que sílaba tem no balão?" É assim, brincando com letras, sons e rimas, que as crianças se encantam pela linguagem.</p>
@@ -294,7 +326,7 @@
 
           <article class="project project--fest reveal">
             <div class="project__visual" aria-hidden="true">
-              <img src="img/projeto-festas.png" alt="Crianças fantasiadas celebrando uma festa escolar, como o Arraiá" loading="lazy" />
+              <img src="img/projeto-festas.webp" alt="Crianças fantasiadas celebrando uma festa escolar, como o Arraiá" loading="lazy" decoding="async" width="1536" height="1024" />
             </div>
             <h3>Festas e eventos</h3>
             <p>Arraiá, dia da mochila maluca, baile de máscaras e muito mais. Celebrações que marcam a infância e criam memórias.</p>
@@ -338,7 +370,7 @@
         <div class="location reveal">
           <div class="location__map">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m3!2m1!1s-27.6403083,-48.6724612!6i16"
+              src="https://maps.google.com/maps?q=Centro%20Educacional%20Prof%C2%AA%20Zeone%20Garcia&ll=-27.6403083,-48.6724612&t=&z=17&ie=UTF8&iwloc=&output=embed"
               title="Mapa com a localização do Centro Educacional Zeone Garcia"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
@@ -355,7 +387,7 @@
                 </span>
                 <div>
                   <strong>Endereço</strong>
-                  <span>Palhoça, Santa Catarina</span>
+                  <span>Av. Cláudio Zacchi, 499 - Passa Vinte, Palhoça/SC — CEP 88132-060</span>
                 </div>
               </li>
               <li>
@@ -364,11 +396,11 @@
                 </span>
                 <div>
                   <strong>Atendimento</strong>
-                  <span>Fale com a gente no WhatsApp</span>
+                  <span><a href="https://api.whatsapp.com/send?phone=5548998340569&text=Vim+pelo+site.+Desejo+ser+atendido%28a%29." target="_blank" rel="noopener">(48) 99834-0569</a> — fale com a gente no WhatsApp</span>
                 </div>
               </li>
             </ul>
-            <a class="btn btn--primary" href="https://www.google.com/maps/dir/?api=1&destination=Centro+Educacional+Prof%C2%AA+Zeone+Garcia&destination_place_id=ChIJh6jy8j1XJ5cRdTCH9mANmA4&destination_ll=-27.6403083,-48.6724612" target="_blank" rel="noopener">
+            <a class="btn btn--primary" href="https://www.google.com/maps/dir/?api=1&destination=Centro+Educacional+Prof%C2%AA+Zeone+Garcia,+Av.+Cl%C3%A1udio+Zacchi,+499,+Passa+Vinte,+Palho%C3%A7a,+SC" target="_blank" rel="noopener">
               Traçar rota até a escola
               <svg viewBox="0 0 20 20" aria-hidden="true" fill="currentColor"><path d="M7 2.5 13 10l-6 7.5h-2L11 10 5 2.5Z"/></svg>
             </a>
@@ -382,6 +414,7 @@
       <div class="container">
         <div class="section__head reveal">
           <h2>O que as famílias <span class="highlight">sentem</span> por aqui</h2>
+          <p class="section__sub">Os valores que guiam o nosso dia a dia, na voz de quem vive a escola. <!-- TODO: substituir os cartões abaixo por depoimentos reais com nome da família e turma da criança — prova social com nome converte muito mais. --></p>
         </div>
 
         <div class="testimonials">
@@ -403,6 +436,8 @@
             <footer>Nossa essência</footer>
           </blockquote>
         </div>
+
+        <p class="testimonials__cta reveal">É família Zeone Garcia? <a href="https://api.whatsapp.com/send?phone=5548998340569&text=Vim+pelo+site.+Quero+deixar+meu+depoimento." target="_blank" rel="noopener">Conte sua experiência no WhatsApp</a> — seu relato ajuda outras famílias a confiarem.</p>
       </div>
     </section>
 
@@ -469,13 +504,16 @@
           <li>
             <a href="https://www.instagram.com/cedzeonegarcia" target="_blank" rel="noopener">@cedzeonegarcia</a>
           </li>
-          <li>Palhoça, Santa Catarina</li>
+          <li>
+            <a data-portal href="https://portal-zeone.vercel.app" target="_blank" rel="noopener">Portal das famílias (área restrita)</a>
+          </li>
+          <li>Av. Cláudio Zacchi, 499 - Passa Vinte, Palhoça/SC</li>
         </ul>
       </div>
     </div>
     <div class="footer__bar">
       <div class="container">
-        <p>© 2026 Centro Educacional Professora Zeone Garcia. Todos os direitos reservados.</p>
+        <p>© <span id="ano">2026</span> Centro Educacional Professora Zeone Garcia. Todos os direitos reservados.</p>
       </div>
     </div>
   </footer>
