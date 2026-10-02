@@ -309,6 +309,11 @@ h1 {
   display: none;
 }
 
+/* Item do menu visível só no mobile (no desktop o Portal é o botão do header) */
+.nav__item--mobile {
+  display: none;
+}
+
 .header__portal {
   padding: 0.6rem 1.25rem;
   font-size: 0.95rem;
@@ -1335,6 +1340,10 @@ h1 {
 
   .nav__cta {
     display: inline-flex;
+  }
+
+  .nav__item--mobile {
+    display: list-item;
   }
 
   .header__portal {
