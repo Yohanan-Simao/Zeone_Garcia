@@ -5,8 +5,8 @@
 (function () {
   "use strict";
 
-  /* ---- URL do portal (TROCAR pela URL oficial quando o portal entrar no ar) ---- */
-  var PORTAL_URL = "https://portal-zeone.vercel.app";
+  /* ---- URL do portal (domínio canônico na Vercel) ---- */
+  var PORTAL_URL = "https://portal-zeone-garcia.vercel.app";
 
   document.querySelectorAll("a[data-portal]").forEach(function (a) {
     a.href = PORTAL_URL;
