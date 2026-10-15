@@ -9,3 +9,9 @@ desktop.ini
 
 # Logs
 *.log
+
+# Ferramentas locais e arquivos de apoio
+.codegraph/
+.impeccable/
+LP Zeone Garcia.html
+assets/*.png
