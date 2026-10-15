@@ -218,15 +218,15 @@ section h2 { font-size: clamp(1.9rem, 6vw, 3rem); font-weight: 800; line-height:
 }
 
 /* Rodapé / contato */
-.contato { background: var(--navy); color: #E3E6FA; padding: 22px 0 24px; position: relative; }
+.contato { background: var(--navy); color: #E3E6FA; padding: 18px 0 14px; position: relative; }
 .contato a { color: #fff; }
-.contato__grid { display: grid; grid-template-columns: 84px 1fr; gap: 14px 18px; align-items: start; }
-.contato__logo { width: 84px; border-radius: 12px; background: #fff; padding: 6px; }
-.contato__info { margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px 16px; font-size: .9rem; line-height: 1.4; }
+.contato__grid { display: grid; grid-template-columns: 72px 1fr; gap: 12px 16px; align-items: start; }
+.contato__logo { width: 72px; border-radius: 10px; background: #fff; padding: 5px; }
+.contato__info { margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px 16px; font-size: .9rem; line-height: 1.35; }
 .contato__info > div:first-child { grid-column: 1 / -1; }
 .contato__info dt { font-weight: 800; color: var(--sun); font-size: .8rem; }
 .contato__info dd { margin: 1px 0 0; }
-.contato__legal { width: min(1160px, 100% - 40px); margin: 16px auto 0; padding-top: 12px; border-top: 1px solid rgba(255, 255, 255, .18); font-size: .85rem; }
+.contato__legal { width: min(1160px, 100% - 40px); margin: 12px auto 0; padding-top: 10px; border-top: 1px solid rgba(255, 255, 255, .18); font-size: .85rem; }
 
 
 /* Tablet e desktop */
@@ -235,8 +235,8 @@ section h2 { font-size: clamp(1.9rem, 6vw, 3rem); font-weight: 800; line-height:
   .proj { grid-template-columns: repeat(3, 1fr); align-items: start; gap: 28px; }
   .proj__item:nth-child(2) { margin-top: 56px; }
   .facts ul { grid-template-columns: repeat(3, 1fr); gap: 32px; }
-  .contato__logo { width: 110px; }
-  .contato__grid { grid-template-columns: 110px 1fr; }
+  .contato__logo { width: 88px; }
+  .contato__grid { grid-template-columns: 88px 1fr; align-items: center; }
   .contato__info { grid-template-columns: repeat(4, auto); justify-content: start; gap: 12px 32px; }
   .contato__info > div:first-child { grid-column: auto; }
 }
@@ -258,8 +258,8 @@ section h2 { font-size: clamp(1.9rem, 6vw, 3rem); font-weight: 800; line-height:
   .turma:nth-child(3) { transform: rotate(1.2deg); }
   .turma:hover { transform: rotate(0) translateY(-6px); }
   .contato__grid { grid-template-columns: auto 1fr; gap: 48px; align-items: center; }
-  .contato__logo { width: 132px; }
-  .contato__info { grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 24px; font-size: .98rem; }
+  .contato__logo { width: 96px; }
+  .contato__info { grid-template-columns: 2.3fr 1.1fr 1.1fr 1.9fr; gap: 20px; font-size: .95rem; }
   .dif__grid { grid-template-columns: minmax(280px, 380px) 1fr; gap: 72px; align-items: start; }
   .dif__intro { position: sticky; top: 110px; }
   .dif__mark { width: 200px; }
