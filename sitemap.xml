@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- TODO: trocar cedzeonegarcia.com.br pelo domínio oficial quando publicar -->
+<!-- Ao conectar um dominio proprio na Vercel, trocar o endereco abaixo. -->
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://cedzeonegarcia.com.br/</loc>
+    <loc>https://zeone-garcia.vercel.app/</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>

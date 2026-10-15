@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-# TODO: trocar pelo domínio oficial quando publicar (ex.: https://www.suaescola.com.br/sitemap.xml)
-Sitemap: https://cedzeonegarcia.com.br/sitemap.xml
+# Ao conectar um dominio proprio na Vercel, trocar o endereco abaixo (e o canonical/og:url do index.html).
+Sitemap: https://zeone-garcia.vercel.app/sitemap.xml

@@ -19,7 +19,7 @@ To "run" it, open `LP Zeone Garcia.html` directly in a browser.
 
 ## Estado atual do site
 
-Site estático sem build: `index.html`, `styles.css`, `script.js`. Hospedagem prevista: Vercel (arquivos estáticos, sem configuração).
+Site estático sem build: `index.html`, `styles.css`, `script.js`. Hospedagem: Vercel, publicado em https://zeone-garcia.vercel.app (deploy automático a cada push na branch main do repositório Yohanan-Simao/Zeone_Garcia). Cabeçalhos de segurança e cache em vercel.json (a CSP libera o formulário só para *.whatsapp.com e wa.me).
 
 - Rodar local: `npx serve -l 4173 .` na raiz e abrir http://localhost:4173/.
 - `assets/` guarda os originais (PNG e `hero-video.mp4`), que não devem ser alterados. `assets/web/` guarda cópias WebP (640 e 1200 px) e o logo, usadas pela página.
