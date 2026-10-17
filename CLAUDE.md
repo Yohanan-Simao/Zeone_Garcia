@@ -24,6 +24,7 @@ Site estático sem build: `index.html`, `styles.css`, `script.js`. Hospedagem: V
 - Rodar local: `npx serve -l 4173 .` na raiz e abrir http://localhost:4173/.
 - `assets/` guarda os originais (PNG e `hero-video.mp4`), que não devem ser alterados. `assets/web/` guarda cópias WebP (640 e 1200 px) e o logo, usadas pela página.
 - Ordem das seções: topo, hero (vídeo), faixa de fatos, turmas, depoimentos, diferenciais, projetos (trilho horizontal no celular, grade no desktop), visita (formulário), rodapé.
+- «Área da escola» (menu do topo, discreto) e «Equipe da escola» (rodapé) levam ao sistema de gestão, https://gestao-zeone.vercel.app/ (projeto Gestao-Zeone); é o único link que não vai ao WhatsApp e não compete com os CTAs.
 - Conversão: todo CTA vai ao WhatsApp. Botões principais amarelos (`#FFC93C`, texto navy); nas turmas, link discreto que leva ao formulário com a turma escolhida. O formulário (`#visitForm`) valida no JS, monta a mensagem e abre o WhatsApp em nova aba; não guarda dados. Não há botão fixo flutuante (decisão do cliente).
 - Dados não confirmados ficam entre colchetes ou fora da página (ver PENDENCIAS.md). Depoimentos exibidos como "Família de aluna" etc., com autorização ainda pendente.
 - `prefers-reduced-motion` desliga animações, vídeo e entrada ao rolar. O vídeo pausa fora da tela.

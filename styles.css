@@ -71,6 +71,8 @@ a { color: var(--navy); text-underline-offset: .2em; }
 .topbar .btn { display: none; }
 .topbar__nav a { text-decoration: none; font-weight: 800; color: var(--navy); padding: 8px 2px; min-height: 44px; display: inline-flex; align-items: center; }
 .topbar__nav a:hover { text-decoration: underline; text-decoration-thickness: 3px; text-decoration-color: var(--magenta); }
+.topbar__nav a.nav-staff { font-weight: 600; font-size: .92rem; color: var(--navy); opacity: .72; }
+.topbar__nav a.nav-staff:hover { opacity: 1; }
 
 /* Hero */
 .hero { position: relative; background: var(--cream); }
